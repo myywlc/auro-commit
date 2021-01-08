@@ -18,7 +18,7 @@ jobs:
         run: |
           git config --local user.email "myywlc@163.com"
           git config --local user.name "凌"
-          git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/myywlc/collect
+          git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/myywlc/react-ssr
           git pull --rebase
           date +"%Y-%m-%d %H:%M:%S.%N" > commit.md
           git commit -am "a commit a day keeps your girlfriend away"
