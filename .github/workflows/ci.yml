@@ -20,6 +20,6 @@ jobs:
           git config --local user.name "凌"
           git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/myywlc/collect
           git pull --rebase
-          date +"%Y-%m-%d %H:%M:%S.%N" > keepchange.txt
+          date +"%Y-%m-%d %H:%M:%S.%N" > commit.md
           git commit -am "a commit a day keeps your girlfriend away"
           git push
